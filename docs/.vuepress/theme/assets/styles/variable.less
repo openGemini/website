@@ -1,0 +1,20 @@
+/* font */
+@font-color: #474762;
+@font-color-2: #272841;
+@font-active-color: #409eff;
+@font-color-dark: #f9f9f9;
+@font-color-dark-2: #b3b3b3;
+@color-blue: rgb(46, 31, 211);
+
+@border-color: #e9eaee;
+@box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.12);
+
+@navbar-height: 60px;
+@footbar-height: 360px;
+.multi-line-ellipsis(@clamp) {
+    word-break: break-all;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: @clamp;
+    -webkit-box-orient: vertical;
+}

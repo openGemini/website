@@ -60,7 +60,7 @@
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
-import { usePageLang } from '@vuepress/client';
+import { usePageLang, useRouteLocale } from '@vuepress/client';
 
 import features from './features';
 import { getPageData } from '@/utils/blog';
@@ -75,6 +75,7 @@ import { Links } from '@/types/enum';
 const { t } = useI18n();
 const router = useRouter();
 const lang = usePageLang();
+const routeLocale = useRouteLocale();
 
 const pageData = getPageData();
 
@@ -85,7 +86,7 @@ const latestBlog = computed(() => {
 });
 
 const viewMore = () => {
-    router.push('/blog');
+    router.push(`${routeLocale.value}blog`);
 };
 
 const jump = (url: string) => window.open(url);

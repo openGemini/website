@@ -119,8 +119,10 @@ const close = () => (display.value = false);
 <style lang="less" scoped>
 .opengemini-navigator {
     box-shadow: @box-shadow;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     background: #fff;
     z-index: 9;
 

@@ -12,7 +12,7 @@
             />
         </div>
         <h3>所有活动</h3>
-        <div class="event-list">
+        <div class="event-list" v-if="filterEvents.length">
             <Cover
                 v-for="event in filterEvents"
                 class="event-item"
@@ -25,6 +25,7 @@
                 <el-button @click="addShowCount">{{ t('blog.viewMore') }}</el-button>
             </div>
         </div>
+        <el-empty v-else :description="t('noEvents')" />
     </div>
 </template>
 

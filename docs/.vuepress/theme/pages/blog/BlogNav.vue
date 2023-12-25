@@ -2,7 +2,7 @@
     <div class="blog-nav">
         <SearchBox ref="searchBox" />
         <div class="category-list">
-            <div class="title">分类</div>
+            <div class="title">{{ t('blog.category') }}</div>
             <Select
                 :select-options="categoryList"
                 :value="curCategory"
@@ -10,7 +10,7 @@
             />
         </div>
         <div class="recommend">
-            <div class="title">推荐阅读</div>
+            <div class="title">{{ t('blog.recommended') }}</div>
             <el-link
                 v-for="blog in recommend"
                 :key="blog.key"
@@ -21,7 +21,7 @@
             </el-link>
         </div>
         <div class="tags">
-            <div class="title">热门标签</div>
+            <div class="title">{{ t('blog.hot') }}</div>
             <Select :select-options="tagInfo" :value="curTag" @onChange="onTagChange" />
         </div>
     </div>
@@ -31,7 +31,7 @@
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
-import { getRecommend, getTags } from '@/utils/blog';
+import { getTags } from '@/utils/blog';
 import useStore from './useStore';
 import { BlogCategory } from '@/types/enum';
 import Select from '@/components/Select.vue';
@@ -50,9 +50,10 @@ const categoryList = computed(() => {
 });
 
 const router = useRouter();
-const { locale, curCategory, onCategoryChange, curTag, onTagChange } = useStore();
-const recommend = getRecommend(locale.value);
-const tagInfo = [{ label: '全部', value: 'all' }, ...getTags(locale.value)];
+const { locale, curCategory, onCategoryChange, curTag, onTagChange, recommend } = useStore();
+const tagInfo = computed(() => {
+    return [{ label: t('blog.all'), value: 'all' }, ...getTags(locale.value)];
+});
 
 const toBlog = (path: string) => router.push(path);
 </script>

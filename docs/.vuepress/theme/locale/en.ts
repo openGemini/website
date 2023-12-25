@@ -80,6 +80,10 @@ const en = {
     blog: {
         more: 'More',
         viewMore: 'View More',
+        category: 'Category',
+        recommended: 'Recommended Reading',
+        hot: 'Hot',
+        all: 'All',
     },
     joinUs: {
         title: 'Community',
@@ -114,7 +118,11 @@ const en = {
         community: 'Community',
         viewpoint: 'Viewpoint',
     },
-    noEvents: 'No Events',
+    events: {
+        noEvents: 'No Events',
+        all: 'All Events',
+        start: 'About to start',
+    },
 };
 
 export default en;

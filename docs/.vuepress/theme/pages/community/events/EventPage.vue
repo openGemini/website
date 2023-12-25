@@ -1,7 +1,7 @@
 <template>
     <div class="opengemini-events">
         <div v-if="notStartEvents.length" class="not-start">
-            <h3>即将开始</h3>
+            <h3>{{ t('events.start') }}</h3>
             <Cover
                 v-for="event in notStartEvents"
                 class="event-item"
@@ -11,7 +11,7 @@
                 :info="event"
             />
         </div>
-        <h3>所有活动</h3>
+        <h3>{{ t('events.all') }}</h3>
         <div class="event-list" v-if="filterEvents.length">
             <Cover
                 v-for="event in filterEvents"
@@ -25,7 +25,7 @@
                 <el-button @click="addShowCount">{{ t('blog.viewMore') }}</el-button>
             </div>
         </div>
-        <el-empty v-else :description="t('noEvents')" />
+        <el-empty v-else :description="t('events.noEvents')" />
     </div>
 </template>
 

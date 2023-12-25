@@ -1,5 +1,5 @@
 import { defineClientConfig } from '@vuepress/client';
-import ElementPlus from 'element-plus';
+import ElementPlus, { ID_INJECTION_KEY } from 'element-plus';
 
 import i18n from '@/locale';
 import Directive from '@/directive';
@@ -17,16 +17,12 @@ export default defineClientConfig({
         404: NotFound,
     },
     enhance({ app }) {
+        app.provide(ID_INJECTION_KEY, {
+            prefix: 1024,
+            current: 0,
+        });
         componentRegistor(app);
         app.use(i18n);
         app.use(Directive);
-        //@ts-ignore
-        if (!__VUEPRESS_SSR__) {
-            import('element-plus/es/locale/lang/zh-cn').then((module) => {
-                app.use(ElementPlus, {
-                    locale: module.default,
-                });
-            });
-        }
     },
 });

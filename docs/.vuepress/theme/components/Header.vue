@@ -1,55 +1,57 @@
 <template>
     <div class="opengemini-navigator">
-        <Pinned v-if="showPinned" :event="pinnedEvents" :close="close" />
-        <div class="container">
-            <!-- screen width > 700 -->
-            <div class="nav_bar">
-                <div class="logo" @click="handleSelect('/', [])">
-                    <img src="../assets/images/logo.svg" alt="" width="28" height="28" />
-                    <h3>openGemini</h3>
+        <ClientOnly>
+            <Pinned v-if="showPinned" :event="pinnedEvents" :close="close" />
+            <div class="container">
+                <!-- screen width > 700 -->
+                <div class="nav_bar">
+                    <div class="logo" @click="handleSelect('/', [])">
+                        <img src="../assets/images/logo.svg" alt="" width="28" height="28" />
+                        <h3>openGemini</h3>
+                    </div>
+                    <NavBar mode="horizontal" @select="handleSelect" />
                 </div>
-                <NavBar mode="horizontal" @select="handleSelect" />
-            </div>
-            <!-- screen width < 700 -->
-            <div class="navbar-menu">
-                <el-dropdown ref="dropdown" trigger="click" popper-class="popper">
-                    <Icon class="icon-mcaidan" />
-                    <template #dropdown>
-                        <NavBar @select="menuSelect" />
-                    </template>
-                </el-dropdown>
-                <div class="logo" @click="handleSelect('/', [])">
-                    <img src="../assets/images/logo.svg" alt="" width="28" height="28" />
+                <!-- screen width < 700 -->
+                <div class="navbar-menu">
+                    <el-dropdown ref="dropdown" trigger="click" popper-class="popper">
+                        <Icon class="icon-mcaidan" />
+                        <template #dropdown>
+                            <NavBar @select="menuSelect" />
+                        </template>
+                    </el-dropdown>
+                    <div class="logo" @click="handleSelect('/', [])">
+                        <img src="../assets/images/logo.svg" alt="" width="28" height="28" />
+                    </div>
                 </div>
-            </div>
 
-            <div style="display: flex">
-                <el-dropdown :teleported="false" @command="languageChange">
-                    <Icon class="icon-mlanguage" style="font-size: 20px" />
-                    <template #dropdown>
-                        <el-dropdown-menu>
-                            <el-dropdown-item
-                                :command="Language.en"
-                                :class="{ active: locale === Language.en }"
-                            >
-                                English
-                            </el-dropdown-item>
-                            <el-dropdown-item
-                                :command="Language.zh"
-                                :class="{ active: locale === Language.zh }"
-                            >
-                                中文
-                            </el-dropdown-item>
-                        </el-dropdown-menu>
-                    </template>
-                </el-dropdown>
-                <Icon
-                    class="icon-mgithub"
-                    style="font-size: 20px; margin-left: 16px"
-                    @click="jumpToGit"
-                />
+                <div style="display: flex">
+                    <el-dropdown :teleported="false" @command="languageChange">
+                        <Icon class="icon-mlanguage" style="font-size: 20px" />
+                        <template #dropdown>
+                            <el-dropdown-menu>
+                                <el-dropdown-item
+                                    :command="Language.en"
+                                    :class="{ active: locale === Language.en }"
+                                >
+                                    English
+                                </el-dropdown-item>
+                                <el-dropdown-item
+                                    :command="Language.zh"
+                                    :class="{ active: locale === Language.zh }"
+                                >
+                                    中文
+                                </el-dropdown-item>
+                            </el-dropdown-menu>
+                        </template>
+                    </el-dropdown>
+                    <Icon
+                        class="icon-mgithub"
+                        style="font-size: 20px; margin-left: 16px"
+                        @click="jumpToGit"
+                    />
+                </div>
             </div>
-        </div>
+        </ClientOnly>
     </div>
 </template>
 

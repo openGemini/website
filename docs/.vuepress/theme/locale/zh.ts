@@ -82,6 +82,10 @@ const zh = {
     blog: {
         more: '更多',
         viewMore: '查看更多',
+        category: '分类',
+        recommended: '推荐阅读',
+        hot: '热门标签',
+        all: '全部',
     },
     joinUs: {
         title: '加入我们的开发者社区',
@@ -115,7 +119,11 @@ const zh = {
         community: '社区动态',
         viewpoint: '观点洞察',
     },
-    noEvents: '暂无活动',
+    events: {
+        noEvents: '暂无活动',
+        all: '所有活动',
+        start: '即将开始',
+    },
 };
 
 export default zh;

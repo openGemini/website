@@ -1,6 +1,7 @@
 import { toRefs, computed, reactive } from 'vue';
 import { getPageData } from '@/utils/blog';
 import { usePageLang } from '@vuepress/client';
+import { BlogInfo } from '@/types';
 
 const ADD_COUNT = 5;
 
@@ -56,6 +57,12 @@ const useStore = () => {
     const pageCount = computed(() => {
         return locale.value === 'zh' ? pageData.zh.length : pageData.en.length;
     });
+    const recommend = computed(() => {
+        return pageData[locale.value]
+            .filter((item: BlogInfo) => item.recommend)
+            .sort((a, b) => b.recommend - a.recommend)
+            .slice(0, 5);
+    });
     return {
         ...toRefs(store),
         pageCount,
@@ -66,6 +73,7 @@ const useStore = () => {
         addShowCount,
         setListScroll,
         locale,
+        recommend,
     };
 };
 

@@ -10,13 +10,6 @@ export const getPageData = () => {
     return pages;
 };
 
-export const getRecommend = (locale: 'zh' | 'en') => {
-    return pages[locale]
-        .filter((item: BlogInfo) => item.recommend)
-        .sort((a, b) => b.recommend - a.recommend)
-        .slice(0, 5);
-};
-
 export const getTags = (locale: 'zh' | 'en') => {
     const tagMap: Record<string, number> = {};
     const count = pages[locale].length;

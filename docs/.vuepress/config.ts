@@ -20,7 +20,7 @@ export default defineUserConfig({
     title: 'openGemini',
     description: 'openGemini website',
 
-    head: [['link', { rel: 'icon', href: '/images/logo.png' }]],
+    head: [['link', { rel: 'icon', href: '/images/logo.svg' }]],
     bundler: viteBundler({
         viteOptions: {
             resolve: {

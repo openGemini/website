@@ -24,16 +24,20 @@ const { t } = useI18n();
 const loadMore = () => addShowCount();
 
 onBeforeRouteLeave((to) => {
-    if (to.fullPath.startsWith('/blog/') && to.fullPath.endsWith('.html')) {
-        setListScroll(document.documentElement.scrollTop);
-    } else {
-        setListScroll(0);
+    if (typeof window !== 'undefined') {
+        if (to.fullPath.startsWith('/blog/') && to.fullPath.endsWith('.html')) {
+            setListScroll(document.documentElement.scrollTop);
+        } else {
+            setListScroll(0);
+        }
     }
 });
 onMounted(() => {
-    setTimeout(() => {
-        document.documentElement.scrollTop = listScroll.value;
-    }, 0);
+    if (typeof window !== 'undefined') {
+        setTimeout(() => {
+            document.documentElement.scrollTop = listScroll.value;
+        }, 0);
+    }
 });
 </script>
 

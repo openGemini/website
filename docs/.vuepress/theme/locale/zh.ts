@@ -115,6 +115,7 @@ const zh = {
         community: '社区动态',
         viewpoint: '观点洞察',
     },
+    noEvents: '暂无活动',
 };
 
 export default zh;

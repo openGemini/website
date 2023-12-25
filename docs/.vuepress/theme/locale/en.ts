@@ -114,6 +114,7 @@ const en = {
         community: 'Community',
         viewpoint: 'Viewpoint',
     },
+    noEvents: 'No Events',
 };
 
 export default en;

@@ -6,7 +6,7 @@ import zh from './zh';
 const i18n = createI18n({
     legacy: false,
     globalInjection: true,
-    locale: localStorage.getItem('language') || Language.en,
+    locale: Language.en,
     messages: {
         en,
         zh,

@@ -61,7 +61,7 @@ import { useI18n } from 'vue-i18n';
 import { useRouter, useRoute } from 'vue-router';
 import { useRouteLocale } from '@vuepress/client';
 
-import { Language, Links } from '../types/enum';
+import { Language, Links_en, Links_zh } from '../types/enum';
 import useStore from '@/pages/community/events/useStore';
 import NavBar from './NavBar.vue';
 import Icon from './Icon.vue';
@@ -75,6 +75,8 @@ const { pinnedEvents } = useStore();
 const dropdown = ref();
 const display = ref(true);
 
+const Links = computed(() => (locale.value === Language.en ? Links_en : Links_zh));
+
 const showPinned = computed(() => {
     return pinnedEvents.value.length && display.value;
 });
@@ -86,10 +88,10 @@ const menuSelect = (path: string, fullPath: string[]) => {
 const handleSelect = (path: string, fullPath: string[]) => {
     switch (path) {
         case 'docs':
-            window.open(Links.docs);
+            window.open(Links.value.docs);
             break;
         case 'download':
-            window.open(Links.release);
+            window.open(Links.value.release);
             break;
         default:
             const routePath = `${routeLocale.value}${fullPath.join('/')}`;
@@ -112,7 +114,7 @@ const languageChange = (command: string) => {
 };
 
 const jumpToGit = () => {
-    window.open(Links.github);
+    window.open(Links.value.github);
 };
 
 const close = () => (display.value = false);

@@ -101,7 +101,7 @@ const en = {
         docker: 'Docker Repository',
         developer: 'Developer',
         contribution: 'Contribution',
-        introduction: 'Roadmap',
+        roadmap: 'Roadmap',
         support: 'Support',
     },
     time: {

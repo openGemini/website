@@ -70,14 +70,15 @@ import Feature from './Feature.vue';
 import Scenarios from './Scenarios.vue';
 import JoinUs from './JoinUs.vue';
 import Cover from '@/components/Cover.vue';
-import { Links } from '@/types/enum';
+import { Links_en, Links_zh, Language } from '@/types/enum';
 
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const router = useRouter();
 const lang = usePageLang();
 const routeLocale = useRouteLocale();
-
 const pageData = getPageData();
+
+const Links = computed(() => (locale.value === Language.en ? Links_en : Links_zh));
 
 const latestBlog = computed(() => {
     const blog = lang.value === 'zh-CN' ? pageData.zh : pageData.en;

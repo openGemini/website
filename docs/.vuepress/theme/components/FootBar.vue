@@ -44,7 +44,7 @@
                     <h4>{{ t('footer.developer') }}</h4>
                     <div @click="jump(Links.github)">Github</div>
                     <div @click="jump(Links.contribution)">{{ t('footer.contribution') }}</div>
-                    <div @click="jump(Links.introduction)">{{ t('footer.introduction') }}</div>
+                    <div @click="jump(Links.roadmap)">{{ t('footer.roadmap') }}</div>
                 </div>
                 <div class="column">
                     <h4>{{ t('footer.support') }}</h4>
@@ -57,17 +57,21 @@
 </template>
 
 <script lang="ts" setup>
+import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 import { useRouteLocale } from '@vuepress/client';
 
 import Icon from '@/components/Icon.vue';
 import WeChatQR from '@/components/WeChatQR.vue';
-import { Language, Links } from '@/types/enum';
+import { Language, Links_zh, Links_en } from '@/types/enum';
 
 const { t, locale } = useI18n();
 const router = useRouter();
 const routeLocale = useRouteLocale();
+
+const Links = computed(() => (locale.value === Language.en ? Links_en : Links_zh));
+
 const jump = (path: string, isOut = true) => {
     if (isOut) {
         window.open(path);

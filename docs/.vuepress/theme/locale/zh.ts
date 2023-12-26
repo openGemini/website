@@ -102,7 +102,7 @@ const zh = {
         docker: 'Docker仓库',
         developer: '开发者社区',
         contribution: '贡献指南',
-        introduction: '入门指南',
+        roadmap: '路线图',
         support: '支持',
     },
     time: {

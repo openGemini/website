@@ -40,7 +40,7 @@
             <h3>{{ t('joinUs.title2') }}</h3>
             <p>{{ t('joinUs.content2') }}</p>
             <div>
-                <el-button type="primary" @click="jump(Links.roadmap)">{{
+                <el-button type="primary" @click="jump('community/contribution', false)">{{
                     t('joinUs.btn')
                 }}</el-button>
             </div>
@@ -51,16 +51,14 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useJump } from '@/utils';
 import { Language, Links_en, Links_zh } from '@/types/enum';
 import WeChatQR from '@/components/WeChatQR.vue';
 
 const { t, locale } = useI18n();
+const { jump } = useJump();
 
 const Links = computed(() => (locale.value === Language.en ? Links_en : Links_zh));
-
-const jump = (url: Links_en | Links_zh) => {
-    window.open(url);
-};
 </script>
 
 <style lang="less" scoped>

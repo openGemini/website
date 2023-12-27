@@ -36,14 +36,16 @@
                 <div class="column">
                     <h4>{{ t('footer.resources') }}</h4>
                     <div @click="jump(Links.docs)">{{ t('navbar.docs') }}</div>
-                    <div @click="jump('download', false)">{{ t('navbar.download') }}</div>
+                    <div @click="jump(Links.release)">{{ t('navbar.download') }}</div>
                     <div @click="jump('blog', false)">{{ t('navbar.blog') }}</div>
                     <div @click="jump(Links.docker)">{{ t('footer.docker') }}</div>
                 </div>
                 <div class="column">
                     <h4>{{ t('footer.developer') }}</h4>
                     <div @click="jump(Links.github)">Github</div>
-                    <div @click="jump(Links.contribution)">{{ t('footer.contribution') }}</div>
+                    <div @click="jump('community/contribution', false)">
+                        {{ t('footer.contribution') }}
+                    </div>
                     <div @click="jump(Links.roadmap)">{{ t('footer.roadmap') }}</div>
                 </div>
                 <div class="column">
@@ -59,26 +61,16 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
-import { useRouter } from 'vue-router';
-import { useRouteLocale } from '@vuepress/client';
 
 import Icon from '@/components/Icon.vue';
 import WeChatQR from '@/components/WeChatQR.vue';
 import { Language, Links_zh, Links_en } from '@/types/enum';
+import { useJump } from '@/utils';
 
 const { t, locale } = useI18n();
-const router = useRouter();
-const routeLocale = useRouteLocale();
+const { jump } = useJump();
 
 const Links = computed(() => (locale.value === Language.en ? Links_en : Links_zh));
-
-const jump = (path: string, isOut = true) => {
-    if (isOut) {
-        window.open(path);
-        return;
-    }
-    router.push(`${routeLocale.value}${path}`);
-};
 </script>
 
 <style lang="less" scoped>

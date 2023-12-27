@@ -8,7 +8,7 @@
             <EventPage v-else-if="pageData.frontmatter.eventPage" />
             <EventContent v-else-if="pageData.frontmatter.events" />
             <TCPage v-else-if="pageData.frontmatter.committer" />
-            <Statement v-else-if="pageData.frontmatter.statement" />
+            <Docs v-else />
         </div>
         <FootBar />
     </div>
@@ -29,7 +29,7 @@ import BlogContent from '@/pages/blog/BlogContent.vue';
 import EventPage from '@/pages/community/events/EventPage.vue';
 import EventContent from '@/pages/community/events/EventContent.vue';
 import TCPage from '@/pages/community/committer/TCPage.vue';
-import Statement from '@/pages/Statement.vue';
+import Docs from '@/pages/Docs.vue';
 
 const { locale } = useI18n();
 const pageData = usePageData();

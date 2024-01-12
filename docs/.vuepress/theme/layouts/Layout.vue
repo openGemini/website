@@ -50,11 +50,10 @@ watch(
 
 <style lang="less" scoped>
 .opengemini {
-    height: 100%;
+    min-height: 100%;
 }
 .content {
     min-height: calc(100% - @navbar-height - @footbar-height);
     box-sizing: border-box;
-    padding-top: @navbar-height;
 }
 </style>

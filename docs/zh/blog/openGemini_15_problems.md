@@ -4,7 +4,7 @@ title: 关于openGemini的15个典型问题整理
 pubDate: '2024-02-02'
 author: 向宇
 abstract: 本文整理了社区反馈比较多的一些问题
-cover: /images/cover/20240202-1.jpeg
+cover: /images/cover/20240202-1.png
 recommend: 0
 category: 技术解读
 tag: openGemini

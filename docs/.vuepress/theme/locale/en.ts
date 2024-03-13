@@ -1,7 +1,7 @@
 // @ts-ignore
 import IoT from '@/assets/images/IoT_en.svg';
 // @ts-ignore
-import devops from '@/assets/images/devops_en.svg';
+import otel from '@/assets/images/OTel.svg';
 
 const en = {
     navbar: {
@@ -25,7 +25,7 @@ const en = {
         join: 'Join Us',
     },
     overview: {
-        content: `A high-performance, high-reliability, high-scalability, and low-cost distributed time series database which focus on the storage and analysis of massive time series data`,
+        content: `A time-series database for observability, focusing on the storage and analysis of massive data.`,
         btn1: 'Get Started',
         btn2: 'Star For Me',
     },
@@ -48,9 +48,9 @@ const en = {
                 'A new high cardinality storage engine solves problems such as excessive index memory usage and low read and write performance',
         },
         analysis: {
-            title: 'Data Analysis',
+            title: 'Observability',
             content:
-                'Armed with extensive data analysis algorithms, openGemini supports real-time anomaly detection and forecasting reducing the workloads on OPS engineers.',
+                'Metrics, Logs and Traces can be stored in openGemini，provide a basis for data association analysis',
         },
         om: {
             title: 'Low O&M Costs',
@@ -65,10 +65,9 @@ const en = {
     },
     scenarios: [
         {
-            title: 'Real-time monitoring to view all system running status',
-            img: devops,
-            content:
-                'Monitors the metreics of IT infrastructure and services, ensure the system runs stably.',
+            title: 'Observability',
+            img: otel,
+            content: 'Collecting and analyzing observability data to troubleshoot the system',
         },
         {
             title: 'Time Series Data Analysis',

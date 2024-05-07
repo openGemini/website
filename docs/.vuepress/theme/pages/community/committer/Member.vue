@@ -2,7 +2,6 @@
     <div class="member">
         <img :src="info.img" alt="" :style="{ objectPosition: info.imgPosition || 'top' }" />
         <p class="name">{{ lang === 'en' ? info.enName : info.name }}</p>
-        <p class="title">{{ info.title }}</p>
         <div class="links">
             <a :href="`mailto:${info.email}`">
                 <Icon class="icon-myouxiang" style="font-size: 24px; margin-right: 8px" />

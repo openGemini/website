@@ -14,7 +14,7 @@ const zh = {
     star: 'Star',
     community: {
         events: '活动',
-        committer: '社区SIG',
+        committer: '贡献者',
         contribution: '贡献',
         contact: '联系我们',
     },
@@ -123,6 +123,10 @@ const zh = {
         noEvents: '暂无活动',
         all: '所有活动',
         start: '即将开始',
+    },
+    committer: {
+        requirements: '要求',
+        responsibilities: '职责',
     },
 };
 

@@ -122,6 +122,10 @@ const en = {
         all: 'All Events',
         start: 'About to start',
     },
+    committer: {
+        requirements: 'Requirements',
+        responsibilities: 'Responsibilities and privileges',
+    },
 };
 
 export default en;

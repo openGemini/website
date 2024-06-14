@@ -17,6 +17,7 @@ const en = {
         committer: 'Committer',
         contribution: 'Contribution',
         contact: 'Contact Us',
+        opensource_star: 'Open source star',
     },
     title: {
         feature: 'Features',
@@ -125,6 +126,10 @@ const en = {
     committer: {
         requirements: 'Requirements',
         responsibilities: 'Responsibilities and privileges',
+    },
+    opensource_star: {
+        title: 'Community Open source star',
+        link: 'Their stories in the community',
     },
 };
 

@@ -8,6 +8,7 @@
             <EventPage v-else-if="pageData.frontmatter.eventPage" />
             <EventContent v-else-if="pageData.frontmatter.events" />
             <TCPage v-else-if="pageData.frontmatter.committer" />
+            <OpenSourceStar v-else-if="pageData.frontmatter.opensource_star" />
             <Docs v-else />
         </div>
         <FootBar />
@@ -30,6 +31,7 @@ import EventPage from '@/pages/community/events/EventPage.vue';
 import EventContent from '@/pages/community/events/EventContent.vue';
 import TCPage from '@/pages/community/committer/TCPage.vue';
 import Docs from '@/pages/Docs.vue';
+import OpenSourceStar from '@/pages/opensourcestar/OpenSourceStar.vue';
 
 const { locale } = useI18n();
 const pageData = usePageData();

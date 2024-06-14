@@ -8,6 +8,9 @@
             <el-menu-item index="events">{{ t('community.events') }}</el-menu-item>
             <el-menu-item index="committer">{{ t('community.committer') }}</el-menu-item>
             <el-menu-item index="contribution">{{ t('footer.contribution') }}</el-menu-item>
+            <el-menu-item index="opensource_star">{{
+                t('community.opensource_star')
+            }}</el-menu-item>
         </el-sub-menu>
     </el-menu>
 </template>

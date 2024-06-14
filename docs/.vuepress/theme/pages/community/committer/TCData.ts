@@ -1,3 +1,13 @@
+export type TCMember = {
+    name: string;
+    enName: string;
+    img: string;
+    email: string;
+    github: string;
+    title: string;
+    imgPosition?: 'top' | 'center' | 'bottom';
+};
+
 export const committerInfo = {
     maintainer: {
         groupName: 'Maintainer',

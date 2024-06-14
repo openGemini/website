@@ -15,16 +15,9 @@
 
 <script lang="ts" setup>
 import Icon from '@/components/Icon.vue';
+import { TCMember } from './TCData';
 defineProps<{
-    info: {
-        name: string;
-        enName: string;
-        title: string;
-        img: string;
-        email: string;
-        github: string;
-        imgPosition?: 'top' | 'center' | 'bottom';
-    };
+    info: TCMember;
     lang: 'zh' | 'en';
 }>();
 </script>

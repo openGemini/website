@@ -17,6 +17,7 @@ const zh = {
         committer: '贡献者',
         contribution: '贡献',
         contact: '联系我们',
+        opensource_star: '开源之星',
     },
     title: {
         feature: '特性',
@@ -127,6 +128,10 @@ const zh = {
     committer: {
         requirements: '要求',
         responsibilities: '职责',
+    },
+    opensource_star: {
+        title: '社区开源之星',
+        link: '他们在社区的故事',
     },
 };
 

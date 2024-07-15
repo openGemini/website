@@ -48,4 +48,4 @@ openGemini 开源至今，受到业界的广泛关注和支持，社区共发展
 
 社区地址：[https://github.com/openGemini/openGemini](https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fgithub.com%2FopenGemini%2FopenGemini)
 
-云服务地址：[https://www.huaweicloud.com/product/geminidb.html](https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fwww.huaweicloud.com%2Fproduct%2Fgeminidb.html)
+云服务地址：[https://www.huaweicloud.com/product/geminidb.html](https://www.huaweicloud.com/product/geminidb.html)

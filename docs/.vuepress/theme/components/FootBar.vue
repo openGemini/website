@@ -54,6 +54,16 @@
                 </div>
             </div>
         </div>
+        <div class="cncf">
+            <div class="content">
+                openGemini is a
+                <a href="https://www.cncf.io/">Cloud Native Computing Foundation</a>
+                sandbox project.
+            </div>
+            <div class="logo">
+                <img src="@/assets/images/cncf-color.png" alt="" />
+            </div>
+        </div>
         <div class="copy-right">Copyright @2023 OpenGemini-All Rights Reserved.</div>
     </footer>
 </template>
@@ -90,7 +100,7 @@ footer {
         gap: 1rem;
     }
 
-    .logo {
+    .left .logo {
         display: flex;
         align-items: center;
         & > img {
@@ -146,6 +156,7 @@ footer {
         }
     }
 }
+
 @media screen and (min-width: 700px) {
     footer {
         .container {

@@ -11,7 +11,7 @@
             <OpenSourceStar v-else-if="pageData.frontmatter.opensource_star" />
             <Docs v-else />
         </div>
-        <FootBar />
+        <CNCFFooter />
     </div>
 </template>
 
@@ -23,7 +23,7 @@ import { useRoute } from 'vue-router';
 
 import { Language } from '@/types/enum';
 import Header from '@/components/Header.vue';
-import FootBar from '@/components/FootBar.vue';
+import CNCFFooter from '@/components/CNCFFooter.vue';
 import Home from '@/pages/home/Home.vue';
 import BlogPage from '@/pages/blog/BlogPage.vue';
 import BlogContent from '@/pages/blog/BlogContent.vue';

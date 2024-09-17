@@ -151,6 +151,13 @@ export const committerInfo = {
                 email: 'chenxulin295@163.com',
                 github: 'https://github.com/Chenxulin97',
             },
+            {
+                name: '王伟平',
+                enName: 'WeiPing Wang',
+                img: '/images/member/wangweiping.jpg',
+                email: 'hustwaitone@163.com',
+                github: 'https://github.com/weiping-code',
+            },
         ],
     },
 };

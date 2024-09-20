@@ -42,7 +42,7 @@ const categoryList = computed(() => {
     return [
         { label: t('category.all'), value: 'all' },
         { label: t('category.technical'), value: BlogCategory.technical },
-        { label: t('category.company'), value: BlogCategory.company },
+        { label: t('category.developerStory'), value: BlogCategory.developerStory },
         { label: t('category.casePractice'), value: BlogCategory.casePractice },
         { label: t('category.community'), value: BlogCategory.community },
         { label: t('category.viewpoint'), value: BlogCategory.viewpoint },

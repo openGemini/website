@@ -6,10 +6,16 @@
         <el-sub-menu index="community" :teleported="false">
             <template #title>{{ t('navbar.community') }}</template>
             <el-menu-item index="events">{{ t('community.events') }}</el-menu-item>
-            <el-menu-item index="committer">{{ t('community.committer') }}</el-menu-item>
+            <el-menu-item index="committer">{{ t('community.membership') }}</el-menu-item>
             <el-menu-item index="contribution">{{ t('footer.contribution') }}</el-menu-item>
             <el-menu-item index="opensource_star">{{
                 t('community.opensource_star')
+            }}</el-menu-item>
+            <el-menu-item v-if="lang === 'zh-CN'" index="talentCultivation">{{
+                t('community.talentCultivation')
+            }}</el-menu-item>
+            <el-menu-item v-if="lang === 'zh-CN'" index="coConstruction">{{
+                t('community.coConstruction')
             }}</el-menu-item>
         </el-sub-menu>
     </el-menu>
@@ -19,6 +25,8 @@
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
+import { usePageLang } from '@vuepress/client';
+
 withDefaults(
     defineProps<{
         mode?: 'horizontal' | 'vertical';
@@ -31,6 +39,8 @@ withDefaults(
 
 const { t } = useI18n();
 const router = useRouter();
+
+const lang = usePageLang();
 
 const curPage = computed(() => {
     return router.currentRoute.value.name;

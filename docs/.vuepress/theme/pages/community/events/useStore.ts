@@ -1,6 +1,7 @@
 import { ref, computed, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { getEventData } from '@/utils/events';
+import { EventInfo } from '@/types';
 
 const eventData = getEventData();
 
@@ -11,7 +12,7 @@ const addShowCount = () => {
     showCount.value += ADD_COUNT;
 };
 
-const pinnedEvents = ref([]);
+const pinnedEvents = ref<EventInfo[]>([]);
 const useStore = () => {
     const route = useRoute();
     const curTime = new Date().getTime();
@@ -29,7 +30,7 @@ const useStore = () => {
     });
 
     watch(
-        () => notStartEvents,
+        () => notStartEvents.value,
         () => {
             const filterEvents = notStartEvents.value
                 .filter((event) => event.pinned)

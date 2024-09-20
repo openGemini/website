@@ -6,7 +6,7 @@ author: openGemini
 abstract: 有一场相遇，等待你开启~
 cover: /images/cover/developer_story.png
 recommend: 2
-category: 社区动态
+category: 开发者故事
 tag: openGemini,社区
 ---
 

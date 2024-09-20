@@ -14,10 +14,12 @@ const en = {
     star: 'Star us on Github',
     community: {
         events: 'Events',
-        committer: 'Committer',
+        membership: 'Membership',
         contribution: 'Contribution',
         contact: 'Contact Us',
         opensource_star: 'Open source star',
+        talentCultivation: 'Talent Cultivation Plan',
+        coConstruction: 'Co-Construction Plan',
     },
     title: {
         feature: 'Features',
@@ -113,8 +115,8 @@ const en = {
     category: {
         all: 'All',
         technical: 'Technical',
-        company: 'Company',
-        casePractice: 'Practice',
+        developerStory: 'Developer Story',
+        casePractice: 'User Case',
         community: 'Community',
         viewpoint: 'Viewpoint',
     },

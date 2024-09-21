@@ -14,10 +14,12 @@ const zh = {
     star: 'Star',
     community: {
         events: '活动',
-        committer: '贡献者',
+        membership: 'Membership',
         contribution: '贡献',
         contact: '联系我们',
         opensource_star: '开源之星',
+        talentCultivation: '人才培养计划',
+        coConstruction: '共建计划',
     },
     title: {
         feature: '特性',
@@ -115,8 +117,8 @@ const zh = {
     category: {
         all: '全部',
         technical: '技术解读',
-        company: '公司动态',
-        casePractice: '案例实践',
+        developerStory: '开发者故事',
+        casePractice: '用户案例',
         community: '社区动态',
         viewpoint: '观点洞察',
     },

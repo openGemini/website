@@ -34,8 +34,8 @@ export enum Links_en {
 
 export enum BlogCategory {
     technical = '技术解读',
-    company = '公司动态',
-    casePractice = '案例实践',
+    developerStory = '开发者故事',
+    casePractice = '用户案例',
     community = '社区动态',
     viewpoint = '观点洞察',
 }

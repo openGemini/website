@@ -7,7 +7,7 @@ abstract: 本文主要介绍了openGemini多级降采样功能，包括应用场
 cover: /images/cover/multistage_downsample.png
 recommend: 1
 category: 技术解读
-tag: openGemini, 源码解读
+tag: 降采样
 ---
 
 ## 背景

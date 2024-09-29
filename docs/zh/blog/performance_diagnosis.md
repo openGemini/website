@@ -7,7 +7,7 @@ abstract: 数据库是现代企业运营中不可或缺的一部分，它们存�
 cover: /images/cover/3min_zh.png
 recommend: 0
 category: 技术解读
-tag: openGemini,性能诊断
+tag: 性能诊断
 ---
 
 ## 性能指标简介

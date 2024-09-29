@@ -7,7 +7,7 @@ abstract: 北京时间 2024 年 7 月 9 日，云原生计算基金会（CNCF）
 cover: /images/cover/openGemini_CNCF.jpeg
 recommend: 1
 category: 社区动态
-tag: openGemini,CNCF
+tag: CNCF
 ---
 
 北京时间 2024 年 7 月 9 日，云原生计算基金会（CNCF）正式接纳云原生高性能时序数据库项目 [openGemini](https://www.oschina.net/action/GoToLink?url=https%3A%2F%2Fgithub.com%2FopenGemini)。openGemini 的加入，极大地丰富了云原生数据库技术的探索、创新和发展。

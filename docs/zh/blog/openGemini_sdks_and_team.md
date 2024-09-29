@@ -7,7 +7,7 @@ abstract: 揭秘sdk开发进展和背后团队
 cover: /images/cover/sdks_team.png
 recommend: 0
 category: 社区动态
-tag: openGemini,SDK
+tag: SDK
 ---
 
 一直以来，我们都希望openGemini拥有自己的SDK，但是很长一段时间，出于竞争力的考虑，社区把主要精力投放在内核性能提升和高基数存储引擎等其他重要工作上，SDK开发任务便延后了。直到2023年10月，我们迎来了openGemini SDK的社区贡献团队——华为云工业物联平台团队。

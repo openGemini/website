@@ -7,7 +7,7 @@ abstract: 无人值守，你值得睡个好觉！
 cover: /images/cover/20240202.png
 recommend: 0
 category: 技术解读
-tag: openGemini,火焰图
+tag: 火焰图
 ---
 
 ## 你值得睡个好觉

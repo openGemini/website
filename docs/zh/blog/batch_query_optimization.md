@@ -8,7 +8,7 @@ cover: /images/cover/batch_query_optimization.png
 recommend: 0
 # category: 技术解读 公司动态 案例实践 社区动态 观点洞察
 category: 技术解读
-tag: openGemini
+tag: 性能优化
 ---
 
 ## **批量查询优化的背景**

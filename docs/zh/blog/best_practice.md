@@ -7,7 +7,7 @@ abstract: 本文主要介绍了本人在使用openGemini进行性能调优过程
 cover: /images/cover/best_practice.png
 recommend: 0
 category: 技术解读
-tag: openGemini, 最佳实践
+tag: 最佳实践
 ---
 
 ## 监控搭建

@@ -8,7 +8,7 @@ cover: /images/cover/opengeminiv1.1.0.png
 recommend: 0
 # category: 技术解读 公司动态 案例实践 社区动态 观点洞察
 category: 社区动态
-tag: openGemini,版本
+tag: 版本发布
 ---
 
 openGemini 是一款开源、高性能、分布式时序数据库，专注于海量遥测数据存储与分析，采用 MPP 大规模并行处理架构，兼容 InfluxDB 的 API 接口、支持 InfluxQL 及其周边工具集，具备高扩展性（100+节点的集群规模），支持多平台和多形态部署。

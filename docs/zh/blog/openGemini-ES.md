@@ -7,7 +7,7 @@ abstract: 数据库在应用开发中的地位可见一斑，选择一款适合�
 cover: /images/cover/ESvsog.png
 recommend: 0
 category: 技术解读
-tag: openGemini,Elasticsearch
+tag: 数据库对比
 ---
 
 数据库在应用开发中的地位可见一斑，选择一款适合业务的数据库至关重要。而选择数据库的一个重要环节就是调研它们的架构设计、基本概念等，有了这些信息，可以帮助决策者正确地选取合适的数据库。

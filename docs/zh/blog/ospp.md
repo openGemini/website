@@ -6,7 +6,7 @@ author: openGemini
 abstract: 我们认为，一个热爱技术的人，必定是一个喜欢探索、喜欢挑战的人，是一个渴望自己能有更大成就、追求自我成长的人，欢迎申报我们的「开源之夏2024」项目！
 cover: /images/cover/ospp.png
 recommend: 1
-category: 技术解读
+category: 社区动态
 tag: 开源之夏
 ---
 

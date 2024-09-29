@@ -7,7 +7,7 @@ abstract: 有一场相遇，等待你开启~
 cover: /images/cover/developer_story.png
 recommend: 0
 category: 开发者故事
-tag: openGemini,开发者
+tag: 开发者故事
 ---
 
 本期，我们介绍 openGemini 社区的一位非常特别的开发者，他是一个健壮的小伙子，身材微微有点胖，但这并不影响他的健康和活力。他的脸上洋溢着喜悦和自信的笑容，眼神里充满了对技术的热爱。他的笑容和热情感染着周围的人，让人感到非常舒适。

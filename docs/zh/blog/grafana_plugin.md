@@ -7,8 +7,8 @@ abstract: openGemini再添一员“猛将“，有了专属自己的数据源插
 cover: /images/cover/grafana_plugin.png
 recommend: 0
 # category: 技术解读 公司动态 案例实践 社区动态 观点洞察
-category: 社区动态
-tag: openGemini,社区
+category: 技术解读
+tag: Grafana插件
 ---
 
 ## Grafana-openGemini 介绍
@@ -154,11 +154,11 @@ Alias by 中填入$tag_host,表示使用 host 值替换默认表名的展示
 
 ![img](/images/docs_img/a91c972ec763ed6a5de7ee8dfdc11adf.png)
 
-​ time series
+ time series
 
 ![img](/images/docs_img/a6b117bda8eae61ea99b4759201004dd.png)
 
-​ table
+ table
 
 再举个例子，查询日志，查询语句如下：
 

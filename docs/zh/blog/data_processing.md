@@ -8,7 +8,7 @@ cover: /images/cover/data_processing.png
 recommend: 0
 # category: 技术解读 公司动态 案例实践 社区动态 观点洞察
 category: 技术解读
-tag: openGemini
+tag: 乱序处理
 ---
 
 众所周知，在绝大数场景下，时序数据都是按照时间递增顺序入库，但由于网络延迟、设备故障等原因，会造成采集的数据无法保证按序达到，习惯上我们称这些的数据为乱序数据。乱序数据是一种普遍现象，乱序数据处理也是时序数据库必须支持的场景。

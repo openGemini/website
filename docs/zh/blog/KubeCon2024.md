@@ -8,7 +8,7 @@ cover: /images/docs_img/kubecon2024.png
 recommend: 1
 # category: 技术解读 公司动态 案例实践 社区动态 观点洞察
 category: 社区动态
-tag: openGemini,KuebCon
+tag: KubeCon
 ---
 
 ![kubecon2024](/images/docs_img/kubecon2024.png)

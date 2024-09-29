@@ -6,9 +6,9 @@ author: openGemini
 abstract: 在这篇文章中，我们将回顾openGemini的发展历程，探讨其对相关应用领域的影响，并展望未来的发展方向。（文末有福利放送）
 cover: /images/cover/first_anniversary.png
 recommend: 0
-# category: 技术解读 公司动态 案例实践 社区动态 观点洞察
+# category: 技术解读 社区动态 案例实践 社区动态 观点洞察
 category: 社区动态
-tag: 社区
+tag: 周年庆
 ---
 
 ![img](/images/docs_img/v2-b4d7ce7b907607fcf7b92e9a34ec1927_720w.png)

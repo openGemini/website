@@ -7,7 +7,7 @@ abstract: 本文介绍了openGemini全文索引功能，包括基本原理，索
 cover: /images/cover/full_text_index_parsing.png
 recommend: 0
 category: 技术解读
-tag: openGemini,源码解读
+tag: 日志索引
 ---
 
 全文索引是指根据文本内容，例如文本内的关键词、短语、单词前缀等文本集合进行高效检索、过滤等的技术。openGemini 支持全文检索，其使用了一种称为 CLV(Compressed Log with Variable Length Token)变长 token 的全文索引技术**[1]**，以提供较低的磁盘占用，较高的查询性能，以及丰富的查询方式。

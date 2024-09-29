@@ -7,7 +7,7 @@ abstract: ​在openGemini中，在数据持久化到文件时，以时间线为
 cover: /images/cover/prepolymerization.png
 recommend: 3
 category: 技术解读
-tag: openGemini, 源码分析
+tag: 预聚合
 ---
 
 # **数据布局**

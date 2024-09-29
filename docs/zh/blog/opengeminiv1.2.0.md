@@ -6,8 +6,8 @@ author: 向宇
 abstract: openGemini v1.2.0版本已经正式发布，在这个版本中，内核得到优化，新增几项监控项，修复了若干Bug和漏洞，无论是性能还是使用体验都得到了有效提升！
 cover: /images/cover/release_note_zh.png
 recommend: 0
-category: 技术解读
-tag: openGemini
+category: 社区动态
+tag: 版本发布
 ---
 
 在openGemini v1.2.0版本中，我们为您带来了一系列令人振奋的内核优化，将您的体验提升到新的高度，这包括：

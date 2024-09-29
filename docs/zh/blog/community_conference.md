@@ -6,8 +6,8 @@ author: openGemini
 abstract: openGemini例会于每月最后一个周的周三晚上 19:00 准时开始
 cover: /images/cover/20240917.png
 recommend: 0
-category: 例会
-tag: 例会
+category: 社区动态
+tag: 社区例会
 
 ---
 

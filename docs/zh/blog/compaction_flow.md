@@ -7,7 +7,7 @@ abstract: 本文主要介绍openGemini中LSM存储引擎的工作流程，如何
 cover: /images/cover/compaction_flow.png
 recommend: 1
 category: 技术解读
-tag: openGemini, 源码解读
+tag: 文件合并
 ---
 
 # openGemini Compaction 流程解读

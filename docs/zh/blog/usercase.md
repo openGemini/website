@@ -6,7 +6,7 @@ author: openGemini
 abstract: 分享你我，共同推动社区发展！
 cover: /images/cover/usercases.png
 recommend: 1
-category: 技术解读
+category: 用户案例
 tag: 案例征集
 ---
 

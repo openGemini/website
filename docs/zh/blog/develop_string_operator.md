@@ -8,7 +8,7 @@ cover: /images/cover/develop_string_operator.png
 recommend: 0
 # category: 技术解读 公司动态 案例实践 社区动态 观点洞察
 category: 技术解读
-tag: openGemini, 开发教程
+tag: 算子开发
 ---
 
 本篇文章内容前导知识可参考文章：[openGemini 大解析：查询引擎框架](http://mp.weixin.qq.com/s?__biz=MzIwNjMzMTQ4Mg==&mid=2247484228&idx=1&sn=e6b253d826d979ff990d54a1e75cbbfa&chksm=97220871a0558167f3b0cfca28a6397bc4ea9d75266615156aab8e367a57d720ec177db7aba0&scene=21#wechat_redirect)

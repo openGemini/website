@@ -7,7 +7,7 @@ abstract: 本文整理了社区反馈比较多的一些问题
 cover: /images/cover/20240202-1.png
 recommend: 0
 category: 技术解读
-tag: openGemini
+tag: 社区问题
 ---
 
 随着社区用户不断增长，用户需求和场景越来越多样化，本文整理了反馈比较多的一些问题，后续还会陆续整理并沉淀在文档中，同时非常欢迎大家通过社区、交流群向我们反馈。
@@ -109,8 +109,8 @@ curl -i -XPOST 'http://localhost:8086/write?db=db&rp=rp-90' --data-binary 'B,hos
 A：写入数据的时间是历史某个时间点，主要是更新历史数据的情况，COUNT的数据可能会不准。因为COUNT查询的值是提前预处理的，每一次写入，计数器便会加 1，但使用SELECT 查询时，不会返回两条具有相同时间的数据，因此会感觉数据少了。这种情况可以有办法查询真实的统计数据：
 
 ```sql
-# hint查询，加' /*+ Exact_Static_Query */ '
-SELECT /*+ Exact_Static_Query */ COUNT(field_key) FROM measurement_name [WHERE clause]
+# hint查询，加' /*+ exact_statistic_query */ '
+SELECT /*+ exact_statistic_query */ COUNT(field_key) FROM measurement_name [WHERE clause]
 ```
 
 <br/>

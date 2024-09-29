@@ -7,7 +7,7 @@ abstract: 有一场相遇，等待你开启~
 cover: /images/cover/developer_story.png
 recommend: 2
 category: 开发者故事
-tag: openGemini,社区
+tag: 开发者故事
 ---
 
 ![img](/images/docs_img/3baa8922404574005900417245f5a060.jpg)

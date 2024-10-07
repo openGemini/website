@@ -2,7 +2,7 @@
 blog: true
 title: openGemini在云天化流程引擎的最佳实践
 pubDate: '2024-09-29'
-author: openGemini
+author: 云南云天化 刘翔华
 abstract: 历史归档流程数据被安全地迁移至openGemini时序数据库中，其高效的存储与查询机制极大地缩短了数据检索时间，满足了业务对于历史数据快速访问的需求。
 cover: /images/cover/usercase.png
 recommend: 0

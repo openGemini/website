@@ -2,7 +2,7 @@
 blog: true
 title: 投身开源，以热爱共筑技术未来 | openGemini新晋Committer王伟平的心路历程
 pubDate: '2024-09-18'
-author: openGemini
+author: 华为云 王伟平
 abstract: 社区迎来新晋Committer王伟平
 cover: /images/cover/weiping.png
 recommend: 1

@@ -2,7 +2,7 @@
 blog: true
 title: openGemini落地天津江天数据：高效、稳定、安心
 pubDate: '2024-10-06'
-author: 齐小强
+author: 江天数据科技 齐小强
 abstract: openGemini代替InfluxDB，解决了内存占用高、易崩溃、重启耗时长的问题
 cover: /images/cover/usercase.png
 recommend: 0

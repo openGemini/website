@@ -2,7 +2,7 @@
 blog: true
 title: 开发者故事|我的成就感如何而来？
 pubDate: '2024-01-12'
-author: 王建波
+author: 电子科大 王建波
 abstract: 有一场相遇，等待你开启~
 cover: /images/cover/developer_story.png
 recommend: 0

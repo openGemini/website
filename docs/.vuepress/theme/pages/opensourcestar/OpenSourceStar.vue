@@ -10,11 +10,6 @@
                     <p class="intro">{{ lang === 'en' ? m.intro_en : m.intro }}</p>
                 </div>
             </div>
-            <p>
-                <a href="https://mp.weixin.qq.com/s/OBua8YQcdDRkolWkkUpIQg" target="_blank">{{
-                    t('opensource_star.link')
-                }}</a>
-            </p>
         </div>
     </div>
 </template>

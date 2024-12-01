@@ -1,6 +1,6 @@
 <template>
     <div class="scenarios">
-        <el-carousel height="auto" :interval="10000">
+        <el-carousel :height="bannerHeight + 'px'" :interval="10000">
             <el-carousel-item
                 class="carousel"
                 v-for="scenarios in scenariosInfo"
@@ -23,12 +23,21 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue';
+import { ref, onMounted, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { messages, locale } = useI18n();
 
 const scenariosInfo = computed<any>(() => messages.value[locale.value].scenarios);
+
+const bannerHeight = ref<number>();
+
+onMounted(() => {
+    bannerHeight.value = (window.innerWidth * 450) / 1250 + 200;
+    window.addEventListener('resize', () => {
+        bannerHeight.value = (window.innerWidth * 450) / 1250 + 200;
+    });
+});
 </script>
 
 <style lang="less" scoped>
@@ -41,7 +50,6 @@ const scenariosInfo = computed<any>(() => messages.value[locale.value].scenarios
 }
 .carousel {
     padding: 2rem;
-    height: 650px;
     box-sizing: border-box;
 }
 .container {

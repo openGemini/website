@@ -22,6 +22,9 @@
                 <img src="@/assets/images/pic_1.svg" alt="" style="max-width: 600px" />
             </div>
         </div>
+        <!-- carousel -->
+        <Carousel />
+
         <!-- features -->
         <PartContianer class="features" :title="t('title.feature')">
             <div class="container">
@@ -62,6 +65,7 @@ import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 import { usePageLang, useRouteLocale } from '@vuepress/client';
 
+import Carousel from './Carousel.vue';
 import features from './features';
 import { getPageData } from '@/utils/blog';
 import Icon from '@/components/Icon.vue';

@@ -33,9 +33,11 @@ const scenariosInfo = computed<any>(() => messages.value[locale.value].scenarios
 const bannerHeight = ref<number>();
 
 onMounted(() => {
-    bannerHeight.value = (window.innerWidth * 450) / 1250 + 200;
+    const w = Math.min(1450, window.innerWidth);
+    bannerHeight.value = (w * 450) / 1250 + 200;
     window.addEventListener('resize', () => {
-        bannerHeight.value = (window.innerWidth * 450) / 1250 + 200;
+        const w = Math.min(1450, window.innerWidth);
+        bannerHeight.value = (w * 450) / 1250 + 200;
     });
 });
 </script>

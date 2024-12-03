@@ -48,9 +48,11 @@ const jump = (path: string) => {
     router.push(`${routeLocale.value}${path}`);
 };
 onMounted(() => {
-    bannerHeight.value = (window.innerWidth * 640) / 1200;
+    const w = Math.min(1450, window.innerWidth);
+    bannerHeight.value = (w * 640) / 1200;
     window.addEventListener('resize', () => {
-        bannerHeight.value = (window.innerWidth * 640) / 1200;
+        const w = Math.min(1450, window.innerWidth);
+        bannerHeight.value = (w * 640) / 1200;
     });
 });
 </script>

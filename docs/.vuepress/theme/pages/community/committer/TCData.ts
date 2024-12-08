@@ -158,6 +158,13 @@ export const committerInfo = {
                 email: 'hustwaitone@163.com',
                 github: 'https://github.com/weiping-code',
             },
+            {
+                name: '徐业',
+                enName: 'Ye Xu',
+                img: '/images/member/xuye.png',
+                email: 'xuthus5@gmail.com',
+                github: 'https://github.com/xuthus5',
+            },
         ],
     },
 };

@@ -49,6 +49,16 @@
                         style="font-size: 20px; margin-left: 16px"
                         @click="jumpToGit"
                     />
+                    <span
+                        class="toggleTheme"
+                        @click="toggleDark()"
+                    >
+                      {{
+                        isDark ?
+                            'Light' :
+                            'Dark'
+                      }}
+                      </span>
                 </div>
             </div>
         </ClientOnly>
@@ -56,6 +66,7 @@
 </template>
 
 <script lang="ts" setup>
+import { toggleDark, isDark } from './composables'
 import { ref, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRouter, useRoute } from 'vue-router';
@@ -174,5 +185,16 @@ const close = () => (display.value = false);
             margin-left: 1rem;
         }
     }
+}
+
+.toggleTheme {
+  width: 50px;
+  text-align: center;
+  margin-left: 16px;
+  border-radius: 20px;
+  padding: 2px 6px;
+  cursor: pointer;
+  border: 1px solid #000000;
+  font-size: 14px;
 }
 </style>

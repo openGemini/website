@@ -8,6 +8,7 @@ import NotFound from './layouts/NotFound.vue';
 import componentRegistor from './componentRegistor';
 
 import './assets/styles/basic.less';
+import './assets/styles/dark.less';
 import './assets/iconfont/iconfont.css';
 import 'element-plus/dist/index.css';
 

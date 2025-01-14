@@ -5,7 +5,8 @@
             <p>{{ t('joinUs.content') }}</p>
             <div class="links">
                 <span class="link" @click="jump(Links.github)">
-                    <img src="@/assets/images/github.svg" alt="" />
+                    <img v-if="isDark == isDarkTheme" src="@/assets/images/github-white.svg" alt=""/>
+                    <img v-else src="@/assets/images/github.svg" alt=""/>
                     <span>GitHub</span>
                 </span>
                 <template v-if="locale === Language.en">
@@ -54,6 +55,7 @@ import { useI18n } from 'vue-i18n';
 import { useJump } from '@/utils';
 import { Language, Links_en, Links_zh } from '@/types/enum';
 import WeChatQR from '@/components/WeChatQR.vue';
+import { isDark, isDarkTheme } from "@/components/composables";
 
 const { t, locale } = useI18n();
 const { jump } = useJump();

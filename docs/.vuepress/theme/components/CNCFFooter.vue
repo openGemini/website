@@ -7,7 +7,8 @@
                 sandbox project.
             </div>
             <div class="logo">
-                <img src="@/assets/images/cncf-color.png" alt="" />
+                <img v-if="isDark == isDarkTheme" src="@/assets/images/cncf-white.svg" alt=""/>
+                <img v-else src="@/assets/images/cncf-color.svg" alt=""/>
             </div>
             <p class="copyright">
                 The Linux Foundation has registered trademarks and uses trademarks. For a list of
@@ -21,7 +22,9 @@
     </footer>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import {isDark, isDarkTheme} from "@/components/composables";
+</script>
 
 <style lang="less" scoped>
 .cncf {
@@ -44,7 +47,6 @@
         height: 100px;
         img {
             width: 100%;
-            height: 100%;
         }
     }
     .copyright {

@@ -41,6 +41,10 @@ html[data-theme='dark'] {
     max-width: 1200px;
     margin: 5rem auto;
     color: @font-color;
+    padding: 0 15px;
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
     .title {
         text-align: center;
     }
@@ -58,10 +62,12 @@ h4 {
 }
 .member {
     width: 200px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
     a {
         color: @font-color;
     }

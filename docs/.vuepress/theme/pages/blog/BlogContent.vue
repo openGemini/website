@@ -69,6 +69,10 @@ onBeforeRouteLeave((to) => {
     max-width: calc(1200px - 100px - 10rem);
     box-sizing: border-box;
     position: relative;
+    padding: 0 15px;
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
     > h1 {
         text-align: center;
     }

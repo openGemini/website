@@ -54,17 +54,20 @@ const viewMore = (path: string) => router.push(path);
 
 <style lang="less" scoped>
 .cover {
-    flex: 1;
-    height: 160px;
     display: flex;
-    min-width: 400px;
-    max-width: 600px;
     cursor: pointer;
     box-shadow: @box-shadow;
     border-radius: 20px;
     padding: 2rem;
     overflow: hidden;
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    @media screen and (min-width: 1200px) {
+      flex: 1;
+      min-width: 400px;
+      max-width: 600px;
+    }
 }
 .cover-info {
     color: @font-color-2;
@@ -85,8 +88,10 @@ const viewMore = (path: string) => router.push(path);
 
     .cover-title {
         overflow: hidden;
-        white-space: nowrap;
         text-overflow: ellipsis;
+        @media screen and (min-width: 1200px) {
+          white-space: nowrap;
+        }
     }
     .more {
         display: flex;

@@ -101,10 +101,13 @@ const jump = (url: string) => window.open(url);
 .opengemini-home {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+      padding: 0 40px;
+    }
 }
 .overview {
     display: flex;
@@ -170,7 +173,10 @@ const jump = (url: string) => window.open(url);
 @media screen and (min-width: 0) {
     .overview {
         .main-title {
-            font-size: 4rem;
+            font-size: 2.5rem;
+            @media screen and (min-width: 1200px) {
+              font-size: 4rem;
+            }
         }
         p {
             font-size: 1rem;

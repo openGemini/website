@@ -67,8 +67,11 @@ const Links = computed(() => (locale.value === Language.en ? Links_en : Links_zh
 .join-us {
     width: 100%;
     display: flex;
-    height: 205px;
+    flex-wrap: wrap;
     gap: 2rem;
+    @media screen and (min-width: 1200px) {
+      height: 205px;
+    }
     p {
         margin: 1.5rem 0;
     }
@@ -77,17 +80,25 @@ const Links = computed(() => (locale.value === Language.en ? Links_en : Links_zh
     }
 }
 .community {
-    flex: 1;
-    max-width: 600px;
     box-shadow: @box-shadow;
     padding: 1.5rem;
     box-sizing: border-box;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+      flex: 1;
+      max-width: 600px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex: 1;
+      max-width: 600px;
+    }
     :deep(.iconfont) {
         font-size: 28px;
     }
 
     .links {
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         .link {
             display: flex;

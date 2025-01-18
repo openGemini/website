@@ -58,6 +58,10 @@ html[data-theme='dark'] {
     max-width: 1200px;
     margin: 5rem auto;
     color: @font-color;
+    padding: 0 15px;
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
 }
 h3,
 h4 {

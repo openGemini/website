@@ -45,14 +45,22 @@ onMounted(() => {
 .opengemini-blog {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 15px;
     display: flex;
+    @media screen and (min-width: 1200px) {
+      padding: 40px;
+    }
 }
 
 .blog-list {
-    max-width: 900px;
-    padding-left: 2rem;
     box-sizing: border-box;
+    @media screen and (min-width: 1200px) {
+      max-width: 900px;
+      padding-left: 2rem;
+      .cover {
+        height: auto;
+      }
+    }
     :deep(.cover) {
         margin-bottom: 2rem;
     }

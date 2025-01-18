@@ -60,8 +60,10 @@ const toBlog = (path: string) => router.push(path);
 
 <style lang="less" scoped>
 .blog-nav {
-    width: 300px;
     // margin-right: 2rem;
+    @media screen and (min-width: 1200px) {
+      width: 300px;
+    }
     :deep(.search-box) {
         width: 100%;
         margin-left: 0;

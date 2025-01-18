@@ -43,8 +43,10 @@ import {isDark, isDarkTheme} from "@/components/composables";
         text-align: center;
     }
     .logo {
-        width: 495px;
+        width: 100%;
+        max-width: 495px;
         height: 100px;
+
         img {
             width: 100%;
         }

@@ -4,7 +4,7 @@
 
 Website is openGemini community contents management system base on vuepress2 framework.
 The customized theme provided by vuepress2 os used to meet the personalized display requirements of the website.
-Website address: http://opengemini.org/
+Website address: https://opengemini.org/
 Now we are under developing, welcome to join us.
 
 ## Development Environment
